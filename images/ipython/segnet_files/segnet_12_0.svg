@@ -1,0 +1,703 @@
+<svg height="3209pt" viewBox="0.00 0.00 485.00 3209.00" width="485pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g class="graph" id="graph0" transform="scale(1 1) rotate(0) translate(4 3205)">
+<title>G</title>
+<polygon fill="white" points="-4,4 -4,-3205 481,-3205 481,4 -4,4" stroke="none"/>
+<!-- layer0 -->
+<g class="node" id="node1"><title>layer0</title>
+<polygon fill="none" points="60,-0.5 60,-46.5 417,-46.5 417,-0.5 60,-0.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="149" y="-19.8">(keras.layers.core.Activation)</text>
+<polyline fill="none" points="238,-0.5 238,-46.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="265.5" y="-31.3">input:</text>
+<polyline fill="none" points="238,-23.5 293,-23.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="265.5" y="-8.3">output:</text>
+<polyline fill="none" points="293,-0.5 293,-46.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="355" y="-31.3">(None, 172800, 12)</text>
+<polyline fill="none" points="293,-23.5 417,-23.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="355" y="-8.3">(None, 172800, 12)</text>
+</g>
+<!-- layer1 -->
+<g class="node" id="node2"><title>layer1</title>
+<polygon fill="none" points="65.5,-83.5 65.5,-129.5 411.5,-129.5 411.5,-83.5 65.5,-83.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="149" y="-102.8">(keras.layers.core.Permute)</text>
+<polyline fill="none" points="232.5,-83.5 232.5,-129.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="260" y="-114.3">input:</text>
+<polyline fill="none" points="232.5,-106.5 287.5,-106.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="260" y="-91.3">output:</text>
+<polyline fill="none" points="287.5,-83.5 287.5,-129.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="349.5" y="-114.3">(None, 12, 172800)</text>
+<polyline fill="none" points="287.5,-106.5 411.5,-106.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="349.5" y="-91.3">(None, 172800, 12)</text>
+</g>
+<!-- layer1&#45;&gt;layer0 -->
+<g class="edge" id="edge1"><title>layer1-&gt;layer0</title>
+<path d="M238.5,-83.3664C238.5,-75.1516 238.5,-65.6579 238.5,-56.7252" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-56.6068 238.5,-46.6068 235,-56.6069 242,-56.6068" stroke="black"/>
+</g>
+<!-- layer2 -->
+<g class="node" id="node3"><title>layer2</title>
+<polygon fill="none" points="62,-166.5 62,-212.5 415,-212.5 415,-166.5 62,-166.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-185.8">(keras.layers.core.Reshape)</text>
+<polyline fill="none" points="229,-166.5 229,-212.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="256.5" y="-197.3">input:</text>
+<polyline fill="none" points="229,-189.5 284,-189.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="256.5" y="-174.3">output:</text>
+<polyline fill="none" points="284,-166.5 284,-212.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="349.5" y="-197.3">(None, 12, 360, 480)</text>
+<polyline fill="none" points="284,-189.5 415,-189.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="349.5" y="-174.3">(None, 12, 172800)</text>
+</g>
+<!-- layer2&#45;&gt;layer1 -->
+<g class="edge" id="edge2"><title>layer2-&gt;layer1</title>
+<path d="M238.5,-166.366C238.5,-158.152 238.5,-148.658 238.5,-139.725" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-139.607 238.5,-129.607 235,-139.607 242,-139.607" stroke="black"/>
+</g>
+<!-- layer3 -->
+<g class="node" id="node4"><title>layer3</title>
+<polygon fill="none" points="17.5,-249.5 17.5,-295.5 459.5,-295.5 459.5,-249.5 17.5,-249.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-268.8">(keras.layers.convolutional.Convolution2D)</text>
+<polyline fill="none" points="273.5,-249.5 273.5,-295.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="301" y="-280.3">input:</text>
+<polyline fill="none" points="273.5,-272.5 328.5,-272.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="301" y="-257.3">output:</text>
+<polyline fill="none" points="328.5,-249.5 328.5,-295.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-280.3">(None, 64, 360, 480)</text>
+<polyline fill="none" points="328.5,-272.5 459.5,-272.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-257.3">(None, 12, 360, 480)</text>
+</g>
+<!-- layer3&#45;&gt;layer2 -->
+<g class="edge" id="edge3"><title>layer3-&gt;layer2</title>
+<path d="M238.5,-249.366C238.5,-241.152 238.5,-231.658 238.5,-222.725" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-222.607 238.5,-212.607 235,-222.607 242,-222.607" stroke="black"/>
+</g>
+<!-- layer4 -->
+<g class="node" id="node5"><title>layer4</title>
+<polygon fill="none" points="3.5,-332.5 3.5,-378.5 473.5,-378.5 473.5,-332.5 3.5,-332.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-351.8">(keras.layers.normalization.BatchNormalization)</text>
+<polyline fill="none" points="287.5,-332.5 287.5,-378.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="315" y="-363.3">input:</text>
+<polyline fill="none" points="287.5,-355.5 342.5,-355.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="315" y="-340.3">output:</text>
+<polyline fill="none" points="342.5,-332.5 342.5,-378.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-363.3">(None, 64, 360, 480)</text>
+<polyline fill="none" points="342.5,-355.5 473.5,-355.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-340.3">(None, 64, 360, 480)</text>
+</g>
+<!-- layer4&#45;&gt;layer3 -->
+<g class="edge" id="edge4"><title>layer4-&gt;layer3</title>
+<path d="M238.5,-332.366C238.5,-324.152 238.5,-314.658 238.5,-305.725" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-305.607 238.5,-295.607 235,-305.607 242,-305.607" stroke="black"/>
+</g>
+<!-- layer5 -->
+<g class="node" id="node6"><title>layer5</title>
+<polygon fill="none" points="14,-415.5 14,-461.5 463,-461.5 463,-415.5 14,-415.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="142" y="-434.8">(keras.layers.convolutional.Convolution2D)</text>
+<polyline fill="none" points="270,-415.5 270,-461.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="297.5" y="-446.3">input:</text>
+<polyline fill="none" points="270,-438.5 325,-438.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="297.5" y="-423.3">output:</text>
+<polyline fill="none" points="325,-415.5 325,-461.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-446.3">(None, 128, 362, 482)</text>
+<polyline fill="none" points="325,-438.5 463,-438.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-423.3">(None, 64, 360, 480)</text>
+</g>
+<!-- layer5&#45;&gt;layer4 -->
+<g class="edge" id="edge5"><title>layer5-&gt;layer4</title>
+<path d="M238.5,-415.366C238.5,-407.152 238.5,-397.658 238.5,-388.725" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-388.607 238.5,-378.607 235,-388.607 242,-388.607" stroke="black"/>
+</g>
+<!-- layer6 -->
+<g class="node" id="node7"><title>layer6</title>
+<polygon fill="none" points="13,-498.5 13,-544.5 464,-544.5 464,-498.5 13,-498.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="142" y="-517.8">(keras.layers.convolutional.ZeroPadding2D)</text>
+<polyline fill="none" points="271,-498.5 271,-544.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="298.5" y="-529.3">input:</text>
+<polyline fill="none" points="271,-521.5 326,-521.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="298.5" y="-506.3">output:</text>
+<polyline fill="none" points="326,-498.5 326,-544.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-529.3">(None, 128, 360, 480)</text>
+<polyline fill="none" points="326,-521.5 464,-521.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-506.3">(None, 128, 362, 482)</text>
+</g>
+<!-- layer6&#45;&gt;layer5 -->
+<g class="edge" id="edge6"><title>layer6-&gt;layer5</title>
+<path d="M238.5,-498.366C238.5,-490.152 238.5,-480.658 238.5,-471.725" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-471.607 238.5,-461.607 235,-471.607 242,-471.607" stroke="black"/>
+</g>
+<!-- layer7 -->
+<g class="node" id="node8"><title>layer7</title>
+<polygon fill="none" points="62.5,-581.5 62.5,-627.5 414.5,-627.5 414.5,-581.5 62.5,-581.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="142" y="-600.8">(__main__.UnPooling2D)</text>
+<polyline fill="none" points="221.5,-581.5 221.5,-627.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="249" y="-612.3">input:</text>
+<polyline fill="none" points="221.5,-604.5 276.5,-604.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="249" y="-589.3">output:</text>
+<polyline fill="none" points="276.5,-581.5 276.5,-627.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="345.5" y="-612.3">(None, 128, 180, 240)</text>
+<polyline fill="none" points="276.5,-604.5 414.5,-604.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="345.5" y="-589.3">(None, 128, 360, 480)</text>
+</g>
+<!-- layer7&#45;&gt;layer6 -->
+<g class="edge" id="edge7"><title>layer7-&gt;layer6</title>
+<path d="M238.5,-581.366C238.5,-573.152 238.5,-563.658 238.5,-554.725" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-554.607 238.5,-544.607 235,-554.607 242,-554.607" stroke="black"/>
+</g>
+<!-- layer8 -->
+<g class="node" id="node9"><title>layer8</title>
+<polygon fill="none" points="0,-664.5 0,-710.5 477,-710.5 477,-664.5 0,-664.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="142" y="-683.8">(keras.layers.normalization.BatchNormalization)</text>
+<polyline fill="none" points="284,-664.5 284,-710.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="311.5" y="-695.3">input:</text>
+<polyline fill="none" points="284,-687.5 339,-687.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="311.5" y="-672.3">output:</text>
+<polyline fill="none" points="339,-664.5 339,-710.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-695.3">(None, 128, 180, 240)</text>
+<polyline fill="none" points="339,-687.5 477,-687.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-672.3">(None, 128, 180, 240)</text>
+</g>
+<!-- layer8&#45;&gt;layer7 -->
+<g class="edge" id="edge8"><title>layer8-&gt;layer7</title>
+<path d="M238.5,-664.366C238.5,-656.152 238.5,-646.658 238.5,-637.725" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-637.607 238.5,-627.607 235,-637.607 242,-637.607" stroke="black"/>
+</g>
+<!-- layer9 -->
+<g class="node" id="node10"><title>layer9</title>
+<polygon fill="none" points="14,-747.5 14,-793.5 463,-793.5 463,-747.5 14,-747.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="142" y="-766.8">(keras.layers.convolutional.Convolution2D)</text>
+<polyline fill="none" points="270,-747.5 270,-793.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="297.5" y="-778.3">input:</text>
+<polyline fill="none" points="270,-770.5 325,-770.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="297.5" y="-755.3">output:</text>
+<polyline fill="none" points="325,-747.5 325,-793.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-778.3">(None, 256, 182, 242)</text>
+<polyline fill="none" points="325,-770.5 463,-770.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-755.3">(None, 128, 180, 240)</text>
+</g>
+<!-- layer9&#45;&gt;layer8 -->
+<g class="edge" id="edge9"><title>layer9-&gt;layer8</title>
+<path d="M238.5,-747.366C238.5,-739.152 238.5,-729.658 238.5,-720.725" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-720.607 238.5,-710.607 235,-720.607 242,-720.607" stroke="black"/>
+</g>
+<!-- layer10 -->
+<g class="node" id="node11"><title>layer10</title>
+<polygon fill="none" points="13,-830.5 13,-876.5 464,-876.5 464,-830.5 13,-830.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="142" y="-849.8">(keras.layers.convolutional.ZeroPadding2D)</text>
+<polyline fill="none" points="271,-830.5 271,-876.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="298.5" y="-861.3">input:</text>
+<polyline fill="none" points="271,-853.5 326,-853.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="298.5" y="-838.3">output:</text>
+<polyline fill="none" points="326,-830.5 326,-876.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-861.3">(None, 256, 180, 240)</text>
+<polyline fill="none" points="326,-853.5 464,-853.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-838.3">(None, 256, 182, 242)</text>
+</g>
+<!-- layer10&#45;&gt;layer9 -->
+<g class="edge" id="edge10"><title>layer10-&gt;layer9</title>
+<path d="M238.5,-830.366C238.5,-822.152 238.5,-812.658 238.5,-803.725" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-803.607 238.5,-793.607 235,-803.607 242,-803.607" stroke="black"/>
+</g>
+<!-- layer11 -->
+<g class="node" id="node12"><title>layer11</title>
+<polygon fill="none" points="62.5,-913.5 62.5,-959.5 414.5,-959.5 414.5,-913.5 62.5,-913.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="142" y="-932.8">(__main__.UnPooling2D)</text>
+<polyline fill="none" points="221.5,-913.5 221.5,-959.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="249" y="-944.3">input:</text>
+<polyline fill="none" points="221.5,-936.5 276.5,-936.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="249" y="-921.3">output:</text>
+<polyline fill="none" points="276.5,-913.5 276.5,-959.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="345.5" y="-944.3">(None, 256, 90, 120)</text>
+<polyline fill="none" points="276.5,-936.5 414.5,-936.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="345.5" y="-921.3">(None, 256, 180, 240)</text>
+</g>
+<!-- layer11&#45;&gt;layer10 -->
+<g class="edge" id="edge11"><title>layer11-&gt;layer10</title>
+<path d="M238.5,-913.366C238.5,-905.152 238.5,-895.658 238.5,-886.725" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-886.607 238.5,-876.607 235,-886.607 242,-886.607" stroke="black"/>
+</g>
+<!-- layer12 -->
+<g class="node" id="node13"><title>layer12</title>
+<polygon fill="none" points="3.5,-996.5 3.5,-1042.5 473.5,-1042.5 473.5,-996.5 3.5,-996.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-1015.8">(keras.layers.normalization.BatchNormalization)</text>
+<polyline fill="none" points="287.5,-996.5 287.5,-1042.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="315" y="-1027.3">input:</text>
+<polyline fill="none" points="287.5,-1019.5 342.5,-1019.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="315" y="-1004.3">output:</text>
+<polyline fill="none" points="342.5,-996.5 342.5,-1042.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-1027.3">(None, 256, 90, 120)</text>
+<polyline fill="none" points="342.5,-1019.5 473.5,-1019.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-1004.3">(None, 256, 90, 120)</text>
+</g>
+<!-- layer12&#45;&gt;layer11 -->
+<g class="edge" id="edge12"><title>layer12-&gt;layer11</title>
+<path d="M238.5,-996.366C238.5,-988.152 238.5,-978.658 238.5,-969.725" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-969.607 238.5,-959.607 235,-969.607 242,-969.607" stroke="black"/>
+</g>
+<!-- layer13 -->
+<g class="node" id="node14"><title>layer13</title>
+<polygon fill="none" points="17.5,-1079.5 17.5,-1125.5 459.5,-1125.5 459.5,-1079.5 17.5,-1079.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-1098.8">(keras.layers.convolutional.Convolution2D)</text>
+<polyline fill="none" points="273.5,-1079.5 273.5,-1125.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="301" y="-1110.3">input:</text>
+<polyline fill="none" points="273.5,-1102.5 328.5,-1102.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="301" y="-1087.3">output:</text>
+<polyline fill="none" points="328.5,-1079.5 328.5,-1125.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-1110.3">(None, 512, 92, 122)</text>
+<polyline fill="none" points="328.5,-1102.5 459.5,-1102.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-1087.3">(None, 256, 90, 120)</text>
+</g>
+<!-- layer13&#45;&gt;layer12 -->
+<g class="edge" id="edge13"><title>layer13-&gt;layer12</title>
+<path d="M238.5,-1079.37C238.5,-1071.15 238.5,-1061.66 238.5,-1052.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-1052.61 238.5,-1042.61 235,-1052.61 242,-1052.61" stroke="black"/>
+</g>
+<!-- layer14 -->
+<g class="node" id="node15"><title>layer14</title>
+<polygon fill="none" points="16.5,-1162.5 16.5,-1208.5 460.5,-1208.5 460.5,-1162.5 16.5,-1162.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-1181.8">(keras.layers.convolutional.ZeroPadding2D)</text>
+<polyline fill="none" points="274.5,-1162.5 274.5,-1208.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="302" y="-1193.3">input:</text>
+<polyline fill="none" points="274.5,-1185.5 329.5,-1185.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="302" y="-1170.3">output:</text>
+<polyline fill="none" points="329.5,-1162.5 329.5,-1208.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-1193.3">(None, 512, 90, 120)</text>
+<polyline fill="none" points="329.5,-1185.5 460.5,-1185.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-1170.3">(None, 512, 92, 122)</text>
+</g>
+<!-- layer14&#45;&gt;layer13 -->
+<g class="edge" id="edge14"><title>layer14-&gt;layer13</title>
+<path d="M238.5,-1162.37C238.5,-1154.15 238.5,-1144.66 238.5,-1135.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-1135.61 238.5,-1125.61 235,-1135.61 242,-1135.61" stroke="black"/>
+</g>
+<!-- layer15 -->
+<g class="node" id="node16"><title>layer15</title>
+<polygon fill="none" points="66,-1245.5 66,-1291.5 411,-1291.5 411,-1245.5 66,-1245.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-1264.8">(__main__.UnPooling2D)</text>
+<polyline fill="none" points="225,-1245.5 225,-1291.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="252.5" y="-1276.3">input:</text>
+<polyline fill="none" points="225,-1268.5 280,-1268.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="252.5" y="-1253.3">output:</text>
+<polyline fill="none" points="280,-1245.5 280,-1291.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="345.5" y="-1276.3">(None, 512, 45, 60)</text>
+<polyline fill="none" points="280,-1268.5 411,-1268.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="345.5" y="-1253.3">(None, 512, 90, 120)</text>
+</g>
+<!-- layer15&#45;&gt;layer14 -->
+<g class="edge" id="edge15"><title>layer15-&gt;layer14</title>
+<path d="M238.5,-1245.37C238.5,-1237.15 238.5,-1227.66 238.5,-1218.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-1218.61 238.5,-1208.61 235,-1218.61 242,-1218.61" stroke="black"/>
+</g>
+<!-- layer16 -->
+<g class="node" id="node17"><title>layer16</title>
+<polygon fill="none" points="6.5,-1328.5 6.5,-1374.5 470.5,-1374.5 470.5,-1328.5 6.5,-1328.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="148.5" y="-1347.8">(keras.layers.normalization.BatchNormalization)</text>
+<polyline fill="none" points="290.5,-1328.5 290.5,-1374.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="318" y="-1359.3">input:</text>
+<polyline fill="none" points="290.5,-1351.5 345.5,-1351.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="318" y="-1336.3">output:</text>
+<polyline fill="none" points="345.5,-1328.5 345.5,-1374.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-1359.3">(None, 512, 45, 60)</text>
+<polyline fill="none" points="345.5,-1351.5 470.5,-1351.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-1336.3">(None, 512, 45, 60)</text>
+</g>
+<!-- layer16&#45;&gt;layer15 -->
+<g class="edge" id="edge16"><title>layer16-&gt;layer15</title>
+<path d="M238.5,-1328.37C238.5,-1320.15 238.5,-1310.66 238.5,-1301.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-1301.61 238.5,-1291.61 235,-1301.61 242,-1301.61" stroke="black"/>
+</g>
+<!-- layer17 -->
+<g class="node" id="node18"><title>layer17</title>
+<polygon fill="none" points="20.5,-1411.5 20.5,-1457.5 456.5,-1457.5 456.5,-1411.5 20.5,-1411.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="148.5" y="-1430.8">(keras.layers.convolutional.Convolution2D)</text>
+<polyline fill="none" points="276.5,-1411.5 276.5,-1457.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="304" y="-1442.3">input:</text>
+<polyline fill="none" points="276.5,-1434.5 331.5,-1434.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="304" y="-1419.3">output:</text>
+<polyline fill="none" points="331.5,-1411.5 331.5,-1457.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-1442.3">(None, 512, 47, 62)</text>
+<polyline fill="none" points="331.5,-1434.5 456.5,-1434.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-1419.3">(None, 512, 45, 60)</text>
+</g>
+<!-- layer17&#45;&gt;layer16 -->
+<g class="edge" id="edge17"><title>layer17-&gt;layer16</title>
+<path d="M238.5,-1411.37C238.5,-1403.15 238.5,-1393.66 238.5,-1384.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-1384.61 238.5,-1374.61 235,-1384.61 242,-1384.61" stroke="black"/>
+</g>
+<!-- layer18 -->
+<g class="node" id="node19"><title>layer18</title>
+<polygon fill="none" points="19.5,-1494.5 19.5,-1540.5 457.5,-1540.5 457.5,-1494.5 19.5,-1494.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="148.5" y="-1513.8">(keras.layers.convolutional.ZeroPadding2D)</text>
+<polyline fill="none" points="277.5,-1494.5 277.5,-1540.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="305" y="-1525.3">input:</text>
+<polyline fill="none" points="277.5,-1517.5 332.5,-1517.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="305" y="-1502.3">output:</text>
+<polyline fill="none" points="332.5,-1494.5 332.5,-1540.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-1525.3">(None, 512, 45, 60)</text>
+<polyline fill="none" points="332.5,-1517.5 457.5,-1517.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-1502.3">(None, 512, 47, 62)</text>
+</g>
+<!-- layer18&#45;&gt;layer17 -->
+<g class="edge" id="edge18"><title>layer18-&gt;layer17</title>
+<path d="M238.5,-1494.37C238.5,-1486.15 238.5,-1476.66 238.5,-1467.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-1467.61 238.5,-1457.61 235,-1467.61 242,-1467.61" stroke="black"/>
+</g>
+<!-- layer19 -->
+<g class="node" id="node20"><title>layer19</title>
+<polygon fill="none" points="59.5,-1577.5 59.5,-1623.5 417.5,-1623.5 417.5,-1577.5 59.5,-1577.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="148.5" y="-1596.8">(keras.layers.core.Activation)</text>
+<polyline fill="none" points="237.5,-1577.5 237.5,-1623.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="265" y="-1608.3">input:</text>
+<polyline fill="none" points="237.5,-1600.5 292.5,-1600.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="265" y="-1585.3">output:</text>
+<polyline fill="none" points="292.5,-1577.5 292.5,-1623.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="355" y="-1608.3">(None, 512, 45, 60)</text>
+<polyline fill="none" points="292.5,-1600.5 417.5,-1600.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="355" y="-1585.3">(None, 512, 45, 60)</text>
+</g>
+<!-- layer19&#45;&gt;layer18 -->
+<g class="edge" id="edge19"><title>layer19-&gt;layer18</title>
+<path d="M238.5,-1577.37C238.5,-1569.15 238.5,-1559.66 238.5,-1550.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-1550.61 238.5,-1540.61 235,-1550.61 242,-1550.61" stroke="black"/>
+</g>
+<!-- layer20 -->
+<g class="node" id="node21"><title>layer20</title>
+<polygon fill="none" points="6.5,-1660.5 6.5,-1706.5 470.5,-1706.5 470.5,-1660.5 6.5,-1660.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="148.5" y="-1679.8">(keras.layers.normalization.BatchNormalization)</text>
+<polyline fill="none" points="290.5,-1660.5 290.5,-1706.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="318" y="-1691.3">input:</text>
+<polyline fill="none" points="290.5,-1683.5 345.5,-1683.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="318" y="-1668.3">output:</text>
+<polyline fill="none" points="345.5,-1660.5 345.5,-1706.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-1691.3">(None, 512, 45, 60)</text>
+<polyline fill="none" points="345.5,-1683.5 470.5,-1683.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-1668.3">(None, 512, 45, 60)</text>
+</g>
+<!-- layer20&#45;&gt;layer19 -->
+<g class="edge" id="edge20"><title>layer20-&gt;layer19</title>
+<path d="M238.5,-1660.37C238.5,-1652.15 238.5,-1642.66 238.5,-1633.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-1633.61 238.5,-1623.61 235,-1633.61 242,-1633.61" stroke="black"/>
+</g>
+<!-- layer21 -->
+<g class="node" id="node22"><title>layer21</title>
+<polygon fill="none" points="20.5,-1743.5 20.5,-1789.5 456.5,-1789.5 456.5,-1743.5 20.5,-1743.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="148.5" y="-1762.8">(keras.layers.convolutional.Convolution2D)</text>
+<polyline fill="none" points="276.5,-1743.5 276.5,-1789.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="304" y="-1774.3">input:</text>
+<polyline fill="none" points="276.5,-1766.5 331.5,-1766.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="304" y="-1751.3">output:</text>
+<polyline fill="none" points="331.5,-1743.5 331.5,-1789.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-1774.3">(None, 256, 47, 62)</text>
+<polyline fill="none" points="331.5,-1766.5 456.5,-1766.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-1751.3">(None, 512, 45, 60)</text>
+</g>
+<!-- layer21&#45;&gt;layer20 -->
+<g class="edge" id="edge21"><title>layer21-&gt;layer20</title>
+<path d="M238.5,-1743.37C238.5,-1735.15 238.5,-1725.66 238.5,-1716.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-1716.61 238.5,-1706.61 235,-1716.61 242,-1716.61" stroke="black"/>
+</g>
+<!-- layer22 -->
+<g class="node" id="node23"><title>layer22</title>
+<polygon fill="none" points="19.5,-1826.5 19.5,-1872.5 457.5,-1872.5 457.5,-1826.5 19.5,-1826.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="148.5" y="-1845.8">(keras.layers.convolutional.ZeroPadding2D)</text>
+<polyline fill="none" points="277.5,-1826.5 277.5,-1872.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="305" y="-1857.3">input:</text>
+<polyline fill="none" points="277.5,-1849.5 332.5,-1849.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="305" y="-1834.3">output:</text>
+<polyline fill="none" points="332.5,-1826.5 332.5,-1872.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-1857.3">(None, 256, 45, 60)</text>
+<polyline fill="none" points="332.5,-1849.5 457.5,-1849.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-1834.3">(None, 256, 47, 62)</text>
+</g>
+<!-- layer22&#45;&gt;layer21 -->
+<g class="edge" id="edge22"><title>layer22-&gt;layer21</title>
+<path d="M238.5,-1826.37C238.5,-1818.15 238.5,-1808.66 238.5,-1799.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-1799.61 238.5,-1789.61 235,-1799.61 242,-1799.61" stroke="black"/>
+</g>
+<!-- layer23 -->
+<g class="node" id="node24"><title>layer23</title>
+<polygon fill="none" points="17.5,-1909.5 17.5,-1955.5 459.5,-1955.5 459.5,-1909.5 17.5,-1909.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-1928.8">(keras.layers.convolutional.MaxPooling2D)</text>
+<polyline fill="none" points="273.5,-1909.5 273.5,-1955.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="301" y="-1940.3">input:</text>
+<polyline fill="none" points="273.5,-1932.5 328.5,-1932.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="301" y="-1917.3">output:</text>
+<polyline fill="none" points="328.5,-1909.5 328.5,-1955.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-1940.3">(None, 256, 90, 120)</text>
+<polyline fill="none" points="328.5,-1932.5 459.5,-1932.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-1917.3">(None, 256, 45, 60)</text>
+</g>
+<!-- layer23&#45;&gt;layer22 -->
+<g class="edge" id="edge23"><title>layer23-&gt;layer22</title>
+<path d="M238.5,-1909.37C238.5,-1901.15 238.5,-1891.66 238.5,-1882.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-1882.61 238.5,-1872.61 235,-1882.61 242,-1882.61" stroke="black"/>
+</g>
+<!-- layer24 -->
+<g class="node" id="node25"><title>layer24</title>
+<polygon fill="none" points="56.5,-1992.5 56.5,-2038.5 420.5,-2038.5 420.5,-1992.5 56.5,-1992.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-2011.8">(keras.layers.core.Activation)</text>
+<polyline fill="none" points="234.5,-1992.5 234.5,-2038.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="262" y="-2023.3">input:</text>
+<polyline fill="none" points="234.5,-2015.5 289.5,-2015.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="262" y="-2000.3">output:</text>
+<polyline fill="none" points="289.5,-1992.5 289.5,-2038.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="355" y="-2023.3">(None, 256, 90, 120)</text>
+<polyline fill="none" points="289.5,-2015.5 420.5,-2015.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="355" y="-2000.3">(None, 256, 90, 120)</text>
+</g>
+<!-- layer24&#45;&gt;layer23 -->
+<g class="edge" id="edge24"><title>layer24-&gt;layer23</title>
+<path d="M238.5,-1992.37C238.5,-1984.15 238.5,-1974.66 238.5,-1965.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-1965.61 238.5,-1955.61 235,-1965.61 242,-1965.61" stroke="black"/>
+</g>
+<!-- layer25 -->
+<g class="node" id="node26"><title>layer25</title>
+<polygon fill="none" points="3.5,-2075.5 3.5,-2121.5 473.5,-2121.5 473.5,-2075.5 3.5,-2075.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-2094.8">(keras.layers.normalization.BatchNormalization)</text>
+<polyline fill="none" points="287.5,-2075.5 287.5,-2121.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="315" y="-2106.3">input:</text>
+<polyline fill="none" points="287.5,-2098.5 342.5,-2098.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="315" y="-2083.3">output:</text>
+<polyline fill="none" points="342.5,-2075.5 342.5,-2121.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-2106.3">(None, 256, 90, 120)</text>
+<polyline fill="none" points="342.5,-2098.5 473.5,-2098.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-2083.3">(None, 256, 90, 120)</text>
+</g>
+<!-- layer25&#45;&gt;layer24 -->
+<g class="edge" id="edge25"><title>layer25-&gt;layer24</title>
+<path d="M238.5,-2075.37C238.5,-2067.15 238.5,-2057.66 238.5,-2048.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-2048.61 238.5,-2038.61 235,-2048.61 242,-2048.61" stroke="black"/>
+</g>
+<!-- layer26 -->
+<g class="node" id="node27"><title>layer26</title>
+<polygon fill="none" points="17.5,-2158.5 17.5,-2204.5 459.5,-2204.5 459.5,-2158.5 17.5,-2158.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-2177.8">(keras.layers.convolutional.Convolution2D)</text>
+<polyline fill="none" points="273.5,-2158.5 273.5,-2204.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="301" y="-2189.3">input:</text>
+<polyline fill="none" points="273.5,-2181.5 328.5,-2181.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="301" y="-2166.3">output:</text>
+<polyline fill="none" points="328.5,-2158.5 328.5,-2204.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-2189.3">(None, 128, 92, 122)</text>
+<polyline fill="none" points="328.5,-2181.5 459.5,-2181.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-2166.3">(None, 256, 90, 120)</text>
+</g>
+<!-- layer26&#45;&gt;layer25 -->
+<g class="edge" id="edge26"><title>layer26-&gt;layer25</title>
+<path d="M238.5,-2158.37C238.5,-2150.15 238.5,-2140.66 238.5,-2131.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-2131.61 238.5,-2121.61 235,-2131.61 242,-2131.61" stroke="black"/>
+</g>
+<!-- layer27 -->
+<g class="node" id="node28"><title>layer27</title>
+<polygon fill="none" points="16.5,-2241.5 16.5,-2287.5 460.5,-2287.5 460.5,-2241.5 16.5,-2241.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-2260.8">(keras.layers.convolutional.ZeroPadding2D)</text>
+<polyline fill="none" points="274.5,-2241.5 274.5,-2287.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="302" y="-2272.3">input:</text>
+<polyline fill="none" points="274.5,-2264.5 329.5,-2264.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="302" y="-2249.3">output:</text>
+<polyline fill="none" points="329.5,-2241.5 329.5,-2287.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-2272.3">(None, 128, 90, 120)</text>
+<polyline fill="none" points="329.5,-2264.5 460.5,-2264.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-2249.3">(None, 128, 92, 122)</text>
+</g>
+<!-- layer27&#45;&gt;layer26 -->
+<g class="edge" id="edge27"><title>layer27-&gt;layer26</title>
+<path d="M238.5,-2241.37C238.5,-2233.15 238.5,-2223.66 238.5,-2214.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-2214.61 238.5,-2204.61 235,-2214.61 242,-2214.61" stroke="black"/>
+</g>
+<!-- layer28 -->
+<g class="node" id="node29"><title>layer28</title>
+<polygon fill="none" points="14,-2324.5 14,-2370.5 463,-2370.5 463,-2324.5 14,-2324.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="142" y="-2343.8">(keras.layers.convolutional.MaxPooling2D)</text>
+<polyline fill="none" points="270,-2324.5 270,-2370.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="297.5" y="-2355.3">input:</text>
+<polyline fill="none" points="270,-2347.5 325,-2347.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="297.5" y="-2332.3">output:</text>
+<polyline fill="none" points="325,-2324.5 325,-2370.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-2355.3">(None, 128, 180, 240)</text>
+<polyline fill="none" points="325,-2347.5 463,-2347.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-2332.3">(None, 128, 90, 120)</text>
+</g>
+<!-- layer28&#45;&gt;layer27 -->
+<g class="edge" id="edge28"><title>layer28-&gt;layer27</title>
+<path d="M238.5,-2324.37C238.5,-2316.15 238.5,-2306.66 238.5,-2297.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-2297.61 238.5,-2287.61 235,-2297.61 242,-2297.61" stroke="black"/>
+</g>
+<!-- layer29 -->
+<g class="node" id="node30"><title>layer29</title>
+<polygon fill="none" points="53,-2407.5 53,-2453.5 424,-2453.5 424,-2407.5 53,-2407.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="142" y="-2426.8">(keras.layers.core.Activation)</text>
+<polyline fill="none" points="231,-2407.5 231,-2453.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="258.5" y="-2438.3">input:</text>
+<polyline fill="none" points="231,-2430.5 286,-2430.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="258.5" y="-2415.3">output:</text>
+<polyline fill="none" points="286,-2407.5 286,-2453.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="355" y="-2438.3">(None, 128, 180, 240)</text>
+<polyline fill="none" points="286,-2430.5 424,-2430.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="355" y="-2415.3">(None, 128, 180, 240)</text>
+</g>
+<!-- layer29&#45;&gt;layer28 -->
+<g class="edge" id="edge29"><title>layer29-&gt;layer28</title>
+<path d="M238.5,-2407.37C238.5,-2399.15 238.5,-2389.66 238.5,-2380.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-2380.61 238.5,-2370.61 235,-2380.61 242,-2380.61" stroke="black"/>
+</g>
+<!-- layer30 -->
+<g class="node" id="node31"><title>layer30</title>
+<polygon fill="none" points="0,-2490.5 0,-2536.5 477,-2536.5 477,-2490.5 0,-2490.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="142" y="-2509.8">(keras.layers.normalization.BatchNormalization)</text>
+<polyline fill="none" points="284,-2490.5 284,-2536.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="311.5" y="-2521.3">input:</text>
+<polyline fill="none" points="284,-2513.5 339,-2513.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="311.5" y="-2498.3">output:</text>
+<polyline fill="none" points="339,-2490.5 339,-2536.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-2521.3">(None, 128, 180, 240)</text>
+<polyline fill="none" points="339,-2513.5 477,-2513.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-2498.3">(None, 128, 180, 240)</text>
+</g>
+<!-- layer30&#45;&gt;layer29 -->
+<g class="edge" id="edge30"><title>layer30-&gt;layer29</title>
+<path d="M238.5,-2490.37C238.5,-2482.15 238.5,-2472.66 238.5,-2463.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-2463.61 238.5,-2453.61 235,-2463.61 242,-2463.61" stroke="black"/>
+</g>
+<!-- layer31 -->
+<g class="node" id="node32"><title>layer31</title>
+<polygon fill="none" points="14,-2573.5 14,-2619.5 463,-2619.5 463,-2573.5 14,-2573.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="142" y="-2592.8">(keras.layers.convolutional.Convolution2D)</text>
+<polyline fill="none" points="270,-2573.5 270,-2619.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="297.5" y="-2604.3">input:</text>
+<polyline fill="none" points="270,-2596.5 325,-2596.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="297.5" y="-2581.3">output:</text>
+<polyline fill="none" points="325,-2573.5 325,-2619.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-2604.3">(None, 64, 182, 242)</text>
+<polyline fill="none" points="325,-2596.5 463,-2596.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-2581.3">(None, 128, 180, 240)</text>
+</g>
+<!-- layer31&#45;&gt;layer30 -->
+<g class="edge" id="edge31"><title>layer31-&gt;layer30</title>
+<path d="M238.5,-2573.37C238.5,-2565.15 238.5,-2555.66 238.5,-2546.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-2546.61 238.5,-2536.61 235,-2546.61 242,-2546.61" stroke="black"/>
+</g>
+<!-- layer32 -->
+<g class="node" id="node33"><title>layer32</title>
+<polygon fill="none" points="16.5,-2656.5 16.5,-2702.5 460.5,-2702.5 460.5,-2656.5 16.5,-2656.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-2675.8">(keras.layers.convolutional.ZeroPadding2D)</text>
+<polyline fill="none" points="274.5,-2656.5 274.5,-2702.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="302" y="-2687.3">input:</text>
+<polyline fill="none" points="274.5,-2679.5 329.5,-2679.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="302" y="-2664.3">output:</text>
+<polyline fill="none" points="329.5,-2656.5 329.5,-2702.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-2687.3">(None, 64, 180, 240)</text>
+<polyline fill="none" points="329.5,-2679.5 460.5,-2679.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-2664.3">(None, 64, 182, 242)</text>
+</g>
+<!-- layer32&#45;&gt;layer31 -->
+<g class="edge" id="edge32"><title>layer32-&gt;layer31</title>
+<path d="M238.5,-2656.37C238.5,-2648.15 238.5,-2638.66 238.5,-2629.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-2629.61 238.5,-2619.61 235,-2629.61 242,-2629.61" stroke="black"/>
+</g>
+<!-- layer33 -->
+<g class="node" id="node34"><title>layer33</title>
+<polygon fill="none" points="17.5,-2739.5 17.5,-2785.5 459.5,-2785.5 459.5,-2739.5 17.5,-2739.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-2758.8">(keras.layers.convolutional.MaxPooling2D)</text>
+<polyline fill="none" points="273.5,-2739.5 273.5,-2785.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="301" y="-2770.3">input:</text>
+<polyline fill="none" points="273.5,-2762.5 328.5,-2762.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="301" y="-2747.3">output:</text>
+<polyline fill="none" points="328.5,-2739.5 328.5,-2785.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-2770.3">(None, 64, 360, 480)</text>
+<polyline fill="none" points="328.5,-2762.5 459.5,-2762.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-2747.3">(None, 64, 180, 240)</text>
+</g>
+<!-- layer33&#45;&gt;layer32 -->
+<g class="edge" id="edge33"><title>layer33-&gt;layer32</title>
+<path d="M238.5,-2739.37C238.5,-2731.15 238.5,-2721.66 238.5,-2712.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-2712.61 238.5,-2702.61 235,-2712.61 242,-2712.61" stroke="black"/>
+</g>
+<!-- layer34 -->
+<g class="node" id="node35"><title>layer34</title>
+<polygon fill="none" points="56.5,-2822.5 56.5,-2868.5 420.5,-2868.5 420.5,-2822.5 56.5,-2822.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-2841.8">(keras.layers.core.Activation)</text>
+<polyline fill="none" points="234.5,-2822.5 234.5,-2868.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="262" y="-2853.3">input:</text>
+<polyline fill="none" points="234.5,-2845.5 289.5,-2845.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="262" y="-2830.3">output:</text>
+<polyline fill="none" points="289.5,-2822.5 289.5,-2868.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="355" y="-2853.3">(None, 64, 360, 480)</text>
+<polyline fill="none" points="289.5,-2845.5 420.5,-2845.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="355" y="-2830.3">(None, 64, 360, 480)</text>
+</g>
+<!-- layer34&#45;&gt;layer33 -->
+<g class="edge" id="edge34"><title>layer34-&gt;layer33</title>
+<path d="M238.5,-2822.37C238.5,-2814.15 238.5,-2804.66 238.5,-2795.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-2795.61 238.5,-2785.61 235,-2795.61 242,-2795.61" stroke="black"/>
+</g>
+<!-- layer35 -->
+<g class="node" id="node36"><title>layer35</title>
+<polygon fill="none" points="3.5,-2905.5 3.5,-2951.5 473.5,-2951.5 473.5,-2905.5 3.5,-2905.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-2924.8">(keras.layers.normalization.BatchNormalization)</text>
+<polyline fill="none" points="287.5,-2905.5 287.5,-2951.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="315" y="-2936.3">input:</text>
+<polyline fill="none" points="287.5,-2928.5 342.5,-2928.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="315" y="-2913.3">output:</text>
+<polyline fill="none" points="342.5,-2905.5 342.5,-2951.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-2936.3">(None, 64, 360, 480)</text>
+<polyline fill="none" points="342.5,-2928.5 473.5,-2928.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="408" y="-2913.3">(None, 64, 360, 480)</text>
+</g>
+<!-- layer35&#45;&gt;layer34 -->
+<g class="edge" id="edge35"><title>layer35-&gt;layer34</title>
+<path d="M238.5,-2905.37C238.5,-2897.15 238.5,-2887.66 238.5,-2878.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-2878.61 238.5,-2868.61 235,-2878.61 242,-2878.61" stroke="black"/>
+</g>
+<!-- layer36 -->
+<g class="node" id="node37"><title>layer36</title>
+<polygon fill="none" points="17.5,-2988.5 17.5,-3034.5 459.5,-3034.5 459.5,-2988.5 17.5,-2988.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="145.5" y="-3007.8">(keras.layers.convolutional.Convolution2D)</text>
+<polyline fill="none" points="273.5,-2988.5 273.5,-3034.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="301" y="-3019.3">input:</text>
+<polyline fill="none" points="273.5,-3011.5 328.5,-3011.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="301" y="-2996.3">output:</text>
+<polyline fill="none" points="328.5,-2988.5 328.5,-3034.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-3019.3">(None, 3, 362, 482)</text>
+<polyline fill="none" points="328.5,-3011.5 459.5,-3011.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="394" y="-2996.3">(None, 64, 360, 480)</text>
+</g>
+<!-- layer36&#45;&gt;layer35 -->
+<g class="edge" id="edge36"><title>layer36-&gt;layer35</title>
+<path d="M238.5,-2988.37C238.5,-2980.15 238.5,-2970.66 238.5,-2961.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-2961.61 238.5,-2951.61 235,-2961.61 242,-2961.61" stroke="black"/>
+</g>
+<!-- layer37 -->
+<g class="node" id="node38"><title>layer37</title>
+<polygon fill="none" points="19.5,-3071.5 19.5,-3117.5 457.5,-3117.5 457.5,-3071.5 19.5,-3071.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="148.5" y="-3090.8">(keras.layers.convolutional.ZeroPadding2D)</text>
+<polyline fill="none" points="277.5,-3071.5 277.5,-3117.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="305" y="-3102.3">input:</text>
+<polyline fill="none" points="277.5,-3094.5 332.5,-3094.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="305" y="-3079.3">output:</text>
+<polyline fill="none" points="332.5,-3071.5 332.5,-3117.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-3102.3">(None, 3, 360, 480)</text>
+<polyline fill="none" points="332.5,-3094.5 457.5,-3094.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="395" y="-3079.3">(None, 3, 362, 482)</text>
+</g>
+<!-- layer37&#45;&gt;layer36 -->
+<g class="edge" id="edge37"><title>layer37-&gt;layer36</title>
+<path d="M238.5,-3071.37C238.5,-3063.15 238.5,-3053.66 238.5,-3044.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-3044.61 238.5,-3034.61 235,-3044.61 242,-3044.61" stroke="black"/>
+</g>
+<!-- layer38 -->
+<g class="node" id="node39"><title>layer38</title>
+<polygon fill="none" points="72.5,-3154.5 72.5,-3200.5 404.5,-3200.5 404.5,-3154.5 72.5,-3154.5" stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="148.5" y="-3173.8">(keras.layers.core.Layer)</text>
+<polyline fill="none" points="224.5,-3154.5 224.5,-3200.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="252" y="-3185.3">input:</text>
+<polyline fill="none" points="224.5,-3177.5 279.5,-3177.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="252" y="-3162.3">output:</text>
+<polyline fill="none" points="279.5,-3154.5 279.5,-3200.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="342" y="-3185.3">(None, 3, 360, 480)</text>
+<polyline fill="none" points="279.5,-3177.5 404.5,-3177.5 " stroke="black"/>
+<text font-family="Times,serif" font-size="14.00" text-anchor="middle" x="342" y="-3162.3">(None, 3, 360, 480)</text>
+</g>
+<!-- layer38&#45;&gt;layer37 -->
+<g class="edge" id="edge38"><title>layer38-&gt;layer37</title>
+<path d="M238.5,-3154.37C238.5,-3146.15 238.5,-3136.66 238.5,-3127.73" fill="none" stroke="black"/>
+<polygon fill="black" points="242,-3127.61 238.5,-3117.61 235,-3127.61 242,-3127.61" stroke="black"/>
+</g>
+</g>
+</svg>

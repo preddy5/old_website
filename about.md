@@ -5,8 +5,6 @@ subtitle: Just who the hell you think I am?
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hey there,
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I completed my B.E Hons Computer Science and Engineering from BITS Pilani Goa, did my UnderGradThesis at Laboratory of Mathematics of Imaging, Psychiatry NeuroImaging Laboratory Harvard Medical School, under Prof. Yogesh Rathi. Currently I work at Big Data and Analytics department of @WalmartLabs where I work on Statistical as well big data problems. 
