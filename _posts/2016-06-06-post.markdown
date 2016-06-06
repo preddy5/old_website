@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Residual_Learning_with_Stochastic_Depth"
+title: "Residual Learning with Stochastic_Depth"
 tags:
     - python
     - notebook
@@ -82,8 +82,7 @@ Y_train = np_utils.to_categorical(Y_train, nb_classes)
 # Building Blocks of Whole Network
 
 
-<img src="http://i0.wp.com/deliprao.com/wp-content/uploads/2016/04/Screen-
-Shot-2016-04-01-at-1.33.56-PM.png">
+<img src="http://i0.wp.com/deliprao.com/wp-content/uploads/2016/04/Screen-Shot-2016-04-01-at-1.33.56-PM.png">
 
 The lamdba function in _shortcut function is what makes the network
 **stochastic**. Effectively it is a implementation of the the picture shown
@@ -98,7 +97,7 @@ def _bottleneck(input, nb_filters, init_subsample=(1, 1)):
     conv_3_3 = bn_relu_conv(conv_1_1, nb_filters, 3, 3, W_regularizer=l2(weight_decay))
     return _shortcut(input, conv_3_3)
 
-    
+
 def _shortcut(input, residual):
     stride_width = input._keras_shape[2] / residual._keras_shape[2]
     stride_height = input._keras_shape[3] / residual._keras_shape[3]
@@ -113,7 +112,7 @@ def _shortcut(input, residual):
 
     M1 = merge([shortcut, residual], mode="sum")
     M1 = Activation("relu")(M1)
-    
+
     gate = K.variable(0.0, dtype="uint8")
     decay_rate = 1
     name = 'residual_'+str(len(gates)+1)
@@ -142,7 +141,7 @@ def resnet():
     block1 = residual_block(conv1, block_fn, nb_filters=16, repetations=18, is_first_layer=True)
     block2 = residual_block(block1, block_fn, nb_filters=32, repetations=18)
     block3 = residual_block(block2, block_fn, nb_filters=64, repetations=18, subsample=True)
-    
+
     # Classifier block
     pool2 = AveragePooling2D(pool_size=(8, 8))(block3)
     flatten1 = Flatten()(pool2)
@@ -212,7 +211,7 @@ model.compile(optimizer="adadelta", loss="categorical_crossentropy",metrics=["ac
 Didnt run this snippet because the network is too big for a webpage, can be used
 for debugging purposes.
 
-**In [None]:**
+**In [7]:**
 
 {% highlight python %}
 from IPython.display import SVG
@@ -224,7 +223,7 @@ SVG(model_to_dot(model,show_shapes=True).create(prog='dot', format='svg'))
 # Training the Network
 Training the network with previously coded Callbacks :)
 
-**In [None]:**
+**In [8]:**
 
 {% highlight python %}
 model.fit_generator(img_gen.flow(X_train, Y_train, batch_size=batch_size, shuffle=True),
