@@ -8,10 +8,10 @@ url: "http://pradyu1993.github.io" # the base hostname & protocol for your site
 
 author:
   fullname: Pradyumna Reddy
-  googleplus: https://www.google.com/+MotaquillahMaddane
+  #googleplus:
   github: pradyu1993
   twitter: P_Rady
-  # disqus: your_disqus_forum_shortname
+  disqus: http-pradyu1993-github-io
 
 google_analytics: 'UA-41205015-1'
 
