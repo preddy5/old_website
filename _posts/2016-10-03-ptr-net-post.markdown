@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pointer_Network"
+title: "Pointer Network"
 tags:
     - python
     - notebook
@@ -28,7 +28,7 @@ from keras.layers import Input, LSTM, Dense, RepeatVector, Lambda, Activation
 from keras.layers.wrappers import TimeDistributed
 from keras.engine import InputSpec
 from keras.models import Model
-import keras.backend as K 
+import keras.backend as K
 from keras.callbacks import Callback, LearningRateScheduler
 
 import numpy as np
@@ -86,14 +86,14 @@ class PointerLSTM(LSTM):
         input_shape = self.input_spec[0].shape
         en_seq = states[-1]
         _, [h, c] = super(PointerLSTM, self).step(x_input, states[:-1])
-        
+
         # vt*tanh(W1*e+W2*d)
         dec_seq = K.repeat(h, input_shape[1])
         Eij = time_distributed_dense(en_seq, self.W1, output_dim=1)
         Dij = time_distributed_dense(dec_seq, self.W2, output_dim=1)
         U = self.vt * tanh(Eij + Dij)
         U = K.squeeze(U, 2)
-        
+
         # make probability tensor
         pointer = softmax(U)
         return pointer, [h, c]
