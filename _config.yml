@@ -4,12 +4,12 @@ description: >
   This is a log of how I spend my spare time working on interesting projects.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://pradyu1993.github.io" # the base hostname & protocol for your site
+url: "http://preddy5.github.io" # the base hostname & protocol for your site
 
 author:
   fullname: Pradyumna Reddy
   #googleplus:
-  github: pradyu1993
+  github: preddy5
   twitter: P_Rady
   disqus: http-pradyu1993-github-io
 

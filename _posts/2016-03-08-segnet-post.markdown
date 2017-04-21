@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: [deeplearning]
 title: "Segnet: A Deep Convolutional
 Encoder-Decoder Architecture for Image
 Segmentation"
@@ -9,7 +10,7 @@ tags:
 ---
 # SegNet
 
-Segnet is deep fully convolutional neural network architecture for semantic pixel-wise segmentation. This is implementation of http://arxiv.org/pdf/1511.00561v2.pdf (Except for the Upsampling layer where paper uses indices based upsampling which is not implemented in keras yet( *I am working on it*), but that shouldnt make a lot of difference). You can directly download the code from https://github.com/pradyu1993/segnet. This post is a explaination of what is happening in the code.
+Segnet is deep fully convolutional neural network architecture for semantic pixel-wise segmentation. This is implementation of http://arxiv.org/pdf/1511.00561v2.pdf (Except for the Upsampling layer where paper uses indices based upsampling which is not implemented in keras yet( *I am working on it*), but that shouldnt make a lot of difference). You can directly download the code from https://github.com/preddy5/segnet. This post is a explaination of what is happening in the code.
 
 
 ### Setting Theano Flags
@@ -148,7 +149,7 @@ class UnPooling2D(Layer):
     def get_config(self):
         return {"name":self.__class__.__name__,
             "poolsize":self.poolsize}
-    
+
 {% endhighlight %}
 
 ### Creating and Compiling neuralnet
@@ -271,7 +272,7 @@ history = autoencoder.fit(train_data, train_label, batch_size=batch_size, nb_epo
 autoencoder.save_weights('model_weight_ep100.hdf5')
 #score = autoencoder.evaluate(X_test, X_test, show_accuracy=True, verbose=0)
 #print('Test score:', score[0])
-#print('Test accuracy:', score[1]) 
+#print('Test accuracy:', score[1])
 {% endhighlight %}
 
 ### Visualization
@@ -364,4 +365,3 @@ plt.imshow(gt[2])
 
 
 ![png](/images/ipython/segnet_files/segnet_19_3.png)
-

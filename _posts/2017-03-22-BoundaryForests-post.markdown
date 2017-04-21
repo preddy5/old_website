@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: [general]
 title: "Boundary Tree"
 tags:
     - python

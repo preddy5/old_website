@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: [deeplearning]
 title: "Pointer Network"
 tags:
     - python
@@ -43,7 +44,7 @@ Proc. ICLR, 2015).
 
 #### A visualization of what the decoder is doing.
 
-<img src ="https://raw.githubusercontent.com/pradyu1993/seq2set-keras/master/Ptr-net.png" width="65%">
+<img src ="https://raw.githubusercontent.com/preddy5/seq2set-keras/master/Ptr-net.png" width="65%">
 
 **In []:**
 

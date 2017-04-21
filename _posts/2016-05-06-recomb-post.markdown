@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: [deeplearning]
 title: "Recombinator Networks in TensorFlow"
 tags:
     - python
@@ -11,7 +12,7 @@ Recombinator Networks are concatenation based methods where coarse features
 inform finer features early in their formation such that finer features can make
 use of several layers of computation in deciding how to use coarse features.
 This is a implementation of http://arxiv.org/abs/1511.07356 paper. You can
-directly download the code from https://github.com/pradyu1993/tensorflow-
+directly download the code from https://github.com/preddy5/tensorflow-
 recombinator-networks. This post is a explaination of what is happening in the
 code.
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: [deeplearning]
 title: "Residual Learning with Stochastic_Depth"
 tags:
     - python
@@ -15,7 +16,7 @@ tasks beating previous VGG net
 Stochastic Depth is a ridiculously simple idea which can help in training the
 network even if the maximum depth is in order of
 1000s.(http://arxiv.org/pdf/1603.09382v2.pdf). Total Code is available at
-https://github.com/pradyu1993/Residual-Learning-and-Stochastic-Depth.
+https://github.com/preddy5/Residual-Learning-and-Stochastic-Depth.
 
 ## Usual Importing
 
