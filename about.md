@@ -12,5 +12,7 @@ I completed my B.E Hons Computer Science and Engineering from BITS Pilani Goa, d
 
 ## Some of my Previous Publications:
 [Google Scholar](https://scholar.google.co.uk/citations?user=GQ8VvmUAAAAJ&hl=en)
+
 [Github](https://github.com/preddy5)
+
 [LinkedIn](https://www.linkedin.com/in/pradyumna-reddy-b6a18650/)
